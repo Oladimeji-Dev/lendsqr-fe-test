@@ -8,33 +8,30 @@ export const User = () => {
   return (
     <div className='user-side'>
         <div className="user-side-container">
-            <h1>Users</h1>
+            <h1 >Users</h1>
             <div className="card-users">
                 <div className="card-user">
                     <img src={cardIcon} alt="cardIcon" />
                     <p>USERS</p>
                     <h1>2,453</h1>
                 </div>
-            </div>
-            <div className="card-users">
+            
                 <div className="card-user">
-                    <img src={cardIcon} alt="cardIcon" />
-                    <p>USERS</p>
+                    <img src={cardIcon1} alt="cardIcon" />
+                    <p>ACTIVE USERS</p>
                     <h1>2,453</h1>
                 </div>
-            </div>
-            <div className="card-users">
+            
                 <div className="card-user">
-                    <img src={cardIcon} alt="cardIcon" />
-                    <p>USERS</p>
-                    <h1>2,453</h1>
+                    <img src={cardIcon2} alt="cardIcon" />
+                    <p>USERS WITH LOANS</p>
+                    <h1>12,453</h1>
                 </div>
-            </div>
-            <div className="card-users">
+            
                 <div className="card-user">
-                    <img src={cardIcon} alt="cardIcon" />
-                    <p>USERS</p>
-                    <h1>2,453</h1>
+                    <img src={cardIcon3} alt="cardIcon" />
+                    <p>USERS WITH SAVINGS</p>
+                    <h1>102,453</h1>
                 </div>
             </div>
         </div>
