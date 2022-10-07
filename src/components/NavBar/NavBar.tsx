@@ -3,7 +3,7 @@ import './NavBar.scss'
 import logo from '../../assets/logo.svg'
 import bellIcon from '../../assets/bell-icon.png'
 import avatar from '../../assets/avatar.png'
-import downIcon from '../../assets/down-vector.png'
+import downIcon from '../../assets/dropdown.png'
 import { SearchBox } from '../SearchBox/SearchBox'
 export const NavBar = () => {
   return (

@@ -1,0 +1,52 @@
+$primary : #39CDCC;
+$background: #c4c0c00f;
+$secondary: rgba(33, 63, 125, 1);
+$active:rgba(57, 205, 204, 0.06);
+;
+
+$font :'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.side-bar{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    list-style: none;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+        overflow:auto;
+    height: 86vh;
+
+    .side-item{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        & li{
+            margin-right: 8px;
+            font-size: 0.8rem;
+        }
+
+        &-switchOrg{
+            margin-bottom: 15px;
+        }
+        &-dash{
+            margin-bottom: 5px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+
+    .side-item-head{
+        font-size: 0.8rem;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .active{
+        background-color: $active;
+        border-left:  3px solid $primary;
+    }
+}
