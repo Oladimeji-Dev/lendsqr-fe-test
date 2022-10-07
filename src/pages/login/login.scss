@@ -1,0 +1,155 @@
+$loginprimary : #39CDCC;
+$loginbackground: #c4c0c00f;
+
+@font-face {
+    font-family: Avenir Next;
+    src: url(../../fonts//AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+    font-family: Avenir NextBold;
+    src: url(../../fonts/AvenirNextLTPro-Bold.otf);
+}
+
+
+.login{
+    height: 100vh;
+    &-logo-brand{
+        height: 10vh;
+        width: 50%;
+        background-color:$loginbackground;
+        
+        img{
+            padding: 50px 0;
+            margin-left: 10%;
+        }
+    }
+
+    &-container{
+        font-family: Avenir Next;
+        display: flex;
+        align-items: center;
+        height: 90vh;
+
+        .left-side{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:$loginbackground;
+            height: inherit;
+        }
+        .right-side{
+            // repeated
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-form{
+                width: 80%;
+                margin: 0 auto;
+                height: 350px;
+
+                h1{
+                    font-family: Avenir NextBold;
+                    color: #213F7D;
+                    margin: 0;
+                    font-size: 2.5rem;
+                }
+                .p-details{
+                    font-size: 1.1rem;
+                    margin-top: 10px;
+                }
+
+                .email-form{
+                    width: 70%;
+                    border: 2px solid 
+                    rgba(84, 95, 125, 0.15);
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                    
+                    //repeted
+                    input{
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        padding: 10px;
+                        background-color: white;
+
+                        &:focus{
+                            outline: none; 
+                        }
+
+                        &::placeholder{
+                            color: 
+                            rgba(84, 95, 125, 0.727)
+                            ;
+                        }
+                    }
+
+                }
+
+                .password-form{
+                    width: 70%;
+                    border: 2px solid 
+                    rgba(84, 95, 125, 0.15);
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                    
+                    //repeted
+                    input{
+                        border: none;
+                        outline: none;
+                        width: 85%;
+                        padding: 10px;
+                        background-color: white;
+
+                        &:focus{
+                            outline: none; 
+                        }
+
+                        &::placeholder{
+                            color: 
+                            rgba(84, 95, 125, 0.727)
+                            ;
+                        }
+                    }
+                    .show-btn{
+                        border: none;
+                        background-color: white;
+                        color: $loginprimary;
+                        margin-left: auto;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+                .forgot-password{
+                    color: $loginprimary;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    margin-bottom: 20px;
+                }
+                .submit-btn{
+                    width:70%;
+                    color: white;
+                    background-color: $loginprimary;
+                    border: 1px solid $loginprimary;
+                    padding: 10px 0;
+                    border-radius: 8px;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: white;
+                        color: $loginprimary;
+                    }
+                }
+            }
+            
+        }
+    }
+}
