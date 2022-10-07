@@ -1,11 +1,9 @@
 import React from 'react';
-import { NavBar } from './components/NavBar/NavBar';
-import { SideBar } from './components/SideBar/SideBar';
+import { DashBoard } from './pages/DashBoard/DashBoard';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <SideBar />
+      <DashBoard />
     </div>
   );
 }
