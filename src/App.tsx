@@ -1,9 +1,9 @@
 import React from 'react';
-import { Login } from './pages/login/Login';
+import { SearchBox } from './components/SearchBox/SearchBox';
 function App() {
   return (
     <div className="App">
-      <Login />
+      <SearchBox/>
     </div>
   );
 }

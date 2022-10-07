@@ -1,0 +1,48 @@
+$loginprimary : #39CDCC;
+$loginbackground: #c4c0c00f;
+
+
+@font-face {
+    font-family: Avenir Next;
+    src: url(../../fonts//AvenirNextLTPro-Regular.otf);
+}
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    .nav-search-box{
+        width: 350px;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        height: 40px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+       
+    
+        input{
+            border: none;
+            width: 300px;
+            padding: 10px 20px;
+            &:focus{
+                outline: none;
+            }
+
+            &::placeholder{
+                color: #545F7D;
+                opacity: 0.7;
+            }
+        }
+    
+    }
+    button{
+        background-color: $loginprimary;
+        border: $loginprimary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        height: 40px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}

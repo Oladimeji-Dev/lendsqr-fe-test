@@ -1,4 +1,4 @@
-import './login.scss'
+import './Login.scss'
 import logo from '../../assets/Group.png'
 import bilboard from '../../assets/pablo.png'
 
