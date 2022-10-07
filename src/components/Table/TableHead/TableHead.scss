@@ -1,0 +1,16 @@
+.table-head-row{
+    &-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & td{
+            text-transform: uppercase;
+        }
+
+        & img{
+            margin-left: 8px;
+        }
+    }
+    
+}
