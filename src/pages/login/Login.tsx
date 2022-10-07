@@ -1,5 +1,5 @@
 import './Login.scss'
-import logo from '../../assets/Group.png'
+import logo from '../../assets/logo.svg'
 import bilboard from '../../assets/pablo.png'
 
 export const Login = () => {

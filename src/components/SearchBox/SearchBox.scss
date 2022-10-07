@@ -17,11 +17,12 @@ $loginbackground: #c4c0c00f;
         height: 40px;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
+        padding-left: 2px;
        
     
         input{
             border: none;
-            width: 300px;
+            width: 100%;
             padding: 10px 20px;
             &:focus{
                 outline: none;
@@ -44,5 +45,9 @@ $loginbackground: #c4c0c00f;
         height: 40px;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

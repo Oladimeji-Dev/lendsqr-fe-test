@@ -1,0 +1,84 @@
+$primary : #39CDCC;
+$background: #c4c0c00f;
+$secondary: gba(33, 63, 125, 1);
+
+$font :'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+nav.nav-bar{
+    font-family: $font;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 25px 25px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    
+    .logo{
+        width: 30%;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    .nav-right{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-right{
+            display: flex;
+            align-items: center;
+            & > p{
+                text-decoration: underline;
+                color: $secondary;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+            }
+            img{
+                margin-left: 15px;
+                //repetead
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .profile-avatar{
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                img{
+                    margin-right: 15px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+                .profile-name{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 20px;
+
+                    p{
+                        margin-right: 5px;
+                        
+                    }
+                    img{
+                        margin-left: 5px;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import { SearchBox } from './components/SearchBox/SearchBox';
+import { NavBar } from './components/NavBar/NavBar';
 function App() {
   return (
     <div className="App">
-      <SearchBox/>
+      <NavBar/>
     </div>
   );
 }
