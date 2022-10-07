@@ -1,4 +1,4 @@
-import filterIcon from '../../assets/filter.png'
+import filterIcon from '../../../assets/filter.png'
 export const TableHead = () => {
   return (
     <thead className='table-head'>

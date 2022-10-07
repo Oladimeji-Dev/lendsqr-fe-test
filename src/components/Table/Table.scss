@@ -23,10 +23,15 @@ $font :'Work Sans', sans-serif;
 
             & td{
                 text-transform: uppercase;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
 
             & img{
                 margin-left: 8px;
+
             }
         }
         
