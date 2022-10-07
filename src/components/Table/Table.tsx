@@ -1,34 +1,33 @@
-import React from 'react'
 import './Table.scss'
 import filterIcon from '../../assets/filter.png'
 export const Table = () => {
   return (
-    <table>
-        <thead>
-            <tr>
-                <td>
+    <table className='table'>
+        <thead className='table-head'>
+            <tr className='table-head-row'>
+                <td className='table-head-row-data'>
                     <span>organization</span>
-                    <span>{filterIcon}</span> 
+                    <img src={filterIcon} alt="filtericon" /> 
                     </td>
                 <td>
                     <span>Username</span>
-                    <span>{filterIcon}</span> 
+                    <img src={filterIcon} alt="filtericon" /> 
                 </td>
                 <td>
                     <span>Email</span>
-                    <span>{filterIcon}</span> 
+                    <img src={filterIcon} alt="filtericon" /> 
                 </td>
                 <td>
                     <span>Phone number</span>
-                    <span>{filterIcon}</span> 
+                    <img src={filterIcon} alt="filtericon" /> 
                 </td>
                 <td>
                     <span>Date joined</span>
-                    <span>{filterIcon}</span> 
+                    <img src={filterIcon} alt="filtericon" /> 
                 </td>
                 <td>
                     <span>Status</span>
-                    <span>{filterIcon}</span> 
+                    <img src={filterIcon} alt="filtericon" /> 
                 </td>
             </tr>
         </thead>

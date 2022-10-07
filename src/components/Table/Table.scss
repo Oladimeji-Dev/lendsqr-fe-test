@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+$primary : #39CDCC;
+$background: #c4c0c00f;
+$secondary: rgba(33, 63, 125, 1);
+$active:rgba(57, 205, 204, 0.06);
+$dash-text: #545F7D;
+$font :'Work Sans', sans-serif;
+
+.table{
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+
+    &-head{
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & td{
+                text-transform: uppercase;
+            }
+
+            & img{
+                margin-left: 8px;
+            }
+        }
+        
+    }
+}
