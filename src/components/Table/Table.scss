@@ -6,16 +6,96 @@ $secondary: rgba(33, 63, 125, 1);
 $active:rgba(57, 205, 204, 0.06);
 $dash-text: #545F7D;
 $font :'Work Sans', sans-serif;
+.before-table{
+    position: relative;
 
-.table{
-    background: #FFFFFF;
-    border: 1px solid rgba(33, 63, 125, 0.06);
-    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 4px;
-    width: 100%;
-    padding: 10px 15px;
+    .table{
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px 15px;
+    
+        tr:last-child td{
+            border-bottom: none;
+        }
+    
+        
+    }
+    .filter-data-lists{
+        position:absolute;
+        z-index: 100;
+        width: 250px;
+        border: 1px solid rgba(84, 95, 125, 0.04);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        padding: 10px 15px;
+        background-color: #FFFFFF;
+        top: 50px;
+        left: 20px;
+        //cheange it later
+        display: none;
 
-     tr:last-child td{
-        border-bottom: none;
+        .filter-data-form{
+
+            &::placeholder{
+                font-family: $font;
+            }
+            
+            .filter-data-list{
+                & p{
+                    margin: 9px 0;
+                }
+                & input{
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 5px;
+                    border: 1px solid rgb(84, 95, 125,0.2);
+                    background-color: rgb(255, 255, 255,0.2);
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                & select{
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 5px;
+                    border: 1px solid rgb(84, 95, 125,0.2);
+                    background-color: rgb(255, 255, 255,0.2);
+                }
+
+                & select:last-child{
+                    margin-bottom: 10px;
+                }
+            }
+
+            .filter-data-list-buttons{
+
+                display: flex;
+                align-items: center;
+
+                & Button{
+                    padding: 7px 25px;
+                    border-radius: 8px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .filter-reset-btn{
+                    border: 1px solid #545F7D;
+                    background-color: #FFFFFF;
+                    color: $dash-text;
+                    margin-right: 5px;
+                }
+                .filter-filter-btn{
+                    border: 1px solid $primary;
+                    background-color: $primary;
+                    color: #FFFFFF;
+                }
+            }
+            
+        }
     }
 }
