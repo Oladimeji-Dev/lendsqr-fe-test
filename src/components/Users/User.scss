@@ -9,7 +9,7 @@ $font :'Work Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 .user-side{
-    width: 80%;
+    width: 90%;
     font-family: $font;
     background-color: #c4c0c005;;
 
@@ -24,36 +24,34 @@ $font :'Work Sans', sans-serif;
         & > h1{
             margin: 35px 0;
         }
-    }
-    .card-users{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        
-    }
-    // .card-users{
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 20px;
-    // }
-    // .card-user{
-    //     flex: 1;
-    //     border: 1px solid rgba(33, 63, 125, 0.06);
-    //     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
-    //     border-radius: 4px;
-    //     padding: 15px;
-    //     background-color: #ffff;
 
-    //     & p{
-    //         color: $dash-text;
-    //         font-size: 0.9rem;
-    //     }
+        .card-users{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+        }
+
+        &-footer{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px 0;
+
+            .show-result{
+                width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & p{
+                    color: $secondary;
+                }
+            }
+        }
+
+    }
     
-    //     & h1{
-    //         color: $secondary;
-    //         font-size: 1.2rem;
-    //     }
-    // }
     
 
 }

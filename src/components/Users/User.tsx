@@ -18,6 +18,15 @@ export const User = () => {
             <CardUser icon={cardIcon3} value='USERS WITH SAVINGS' users='102,453'/>
           </div>
           <Table />
+          <footer className='user-side-container-footer'>
+            <div className="show-result">
+              <p>Showing</p>
+              <select name="result" id="">
+                <option value="100">100</option>
+              </select>
+              <p>out of 100</p>
+            </div>
+          </footer>
         </div>
     </div>
   )

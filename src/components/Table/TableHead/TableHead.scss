@@ -1,16 +1,18 @@
 .table-head-row{
-    &-row{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    
+    & th{
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: left;
+        font-size: 0.9rem;
+        padding: 15px 10px;
 
-        & td{
-            text-transform: uppercase;
+        &:hover{
+            cursor: pointer;
         }
-
-        & img{
+        img{
             margin-left: 8px;
         }
     }
-    
 }
+    

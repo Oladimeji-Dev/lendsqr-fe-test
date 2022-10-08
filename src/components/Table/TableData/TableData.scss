@@ -1,0 +1,16 @@
+tr.table-data-row{
+    border-bottom: 1px solid rgba(33, 64, 125, 0.929);
+
+    td{
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+        color:#545F7D;
+
+        .inactive{
+            background: rgb(84, 95, 125,0.06);
+            border-radius: 100px;
+            padding:8px 8px;
+        }
+    }
+    
+}

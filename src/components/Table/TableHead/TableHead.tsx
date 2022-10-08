@@ -1,33 +1,38 @@
 import filterIcon from '../../../assets/filter.png'
+import './TableHead.scss'
 export const TableHead = () => {
   return (
-    <thead className='table-head'>
+    <thead>
         <tr className='table-head-row'>
-            <td className='table-head-row-data'>
+            <th>
                 <span>organization</span>
                 <img src={filterIcon} alt="filtericon" /> 
-                </td>
-            <td>
+            </th>
+            <th>
                 <span>Username</span>
                 <img src={filterIcon} alt="filtericon" /> 
-            </td>
-            <td>
+            </th>
+            <th>
                 <span>Email</span>
                 <img src={filterIcon} alt="filtericon" /> 
-            </td>
-            <td>
+            </th>
+            <th>
                 <span>Phone number</span>
                 <img src={filterIcon} alt="filtericon" /> 
-            </td>
-            <td>
+            </th>
+            <th>
                 <span>Date joined</span>
                 <img src={filterIcon} alt="filtericon" /> 
-            </td>
-            <td>
+            </th>
+            <th>
                 <span>Status</span>
                 <img src={filterIcon} alt="filtericon" /> 
-            </td>
+            </th>
+            <th>
+
+            </th>
         </tr>
-        </thead>
+    </thead>
+
   )
 }
