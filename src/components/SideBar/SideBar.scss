@@ -15,8 +15,9 @@ $font :'Work Sans', sans-serif;
     font-family: $font;
     list-style: none;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
-        overflow:auto;
-    height: 86vh;
+    overflow:auto;
+    height: 120vh;
+
 
     .side-item{
         display: flex;

@@ -1,5 +1,6 @@
 tr.table-data-row{
     border-bottom: 1px solid rgba(33, 64, 125, 0.929);
+    position: relative;
 
     td{
         padding: 15px 10px;
@@ -10,6 +11,49 @@ tr.table-data-row{
             background: rgb(84, 95, 125,0.06);
             border-radius: 100px;
             padding:8px 8px;
+        }
+
+        img{
+            cursor: pointer;
+        }
+    }
+    .table-data-row-img{
+        position: relative;
+
+        &:hover .table-data-details{
+            display: block;
+        }
+
+        .table-data-details{
+            position: absolute;
+            top:20px;
+            left: -100px;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            border: 1px solid rgba(84, 95, 125, 0.04);
+            box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            display: none;
+            z-index: 10;
+
+            & .row-details,.row-blacklist,.row-activate{
+                display: flex;
+                align-items: center;
+                width: 150px;
+                justify-content: center;
+
+                &:hover{
+                    background: rgba(33, 63, 125, 0.1);
+                    cursor: pointer;
+                }
+
+
+            }
+
+            & p{
+                margin-right: 8px;
+            }
         }
     }
     

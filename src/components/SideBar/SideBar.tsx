@@ -86,12 +86,44 @@ export const SideBar = () => {
             </li>
             <li>Users</li>
         </div>
+        <p className='side-item-head'>CUSTOMERS</p>
         <div className='side-item side-item-dash'>
             <li>
                 <img src={userFriendsIcon} alt="briefcase-icon"  />
             </li>
             <li>Users</li>
         </div>
+        <div className='side-item side-item-dash'>
+            <li>
+                <img src={userFriendsIcon} alt="briefcase-icon"  />
+            </li>
+            <li>Users</li>
+        </div>
+        <div className='side-item side-item-dash'>
+            <li>
+                <img src={userFriendsIcon} alt="briefcase-icon"  />
+            </li>
+            <li>Users</li>
+        </div>
+        <div className='side-item side-item-dash'>
+            <li>
+                <img src={userFriendsIcon} alt="briefcase-icon"  />
+            </li>
+            <li>Users</li>
+        </div>
+        <div className='side-item side-item-dash'>
+            <li>
+                <img src={userFriendsIcon} alt="briefcase-icon"  />
+            </li>
+            <li>Users</li>
+        </div>
+        <div className='side-item side-item-dash'>
+            <li>
+                <img src={userFriendsIcon} alt="briefcase-icon"  />
+            </li>
+            <li>Users</li>
+        </div>
+        <p className='side-item-head'>CUSTOMERS</p>
         <div className='side-item side-item-dash'>
             <li>
                 <img src={userFriendsIcon} alt="briefcase-icon"  />

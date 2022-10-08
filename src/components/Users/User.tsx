@@ -23,9 +23,15 @@ export const User = () => {
               <p>Showing</p>
               <select name="result" id="">
                 <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
               </select>
-              <p>out of 100</p>
+              <p>out of 500</p>
             </div>
+
+            <div>hello</div>
           </footer>
         </div>
     </div>
