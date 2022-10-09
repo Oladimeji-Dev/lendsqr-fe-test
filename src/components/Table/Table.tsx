@@ -4,7 +4,7 @@ import { TableHead } from './TableHead/TableHead'
 import { useState } from 'react'
 
 export const Table = () => {
-    const [openModal, setOpenModal] = useState<Boolean>(true)
+    const [openModal, setOpenModal] = useState<Boolean>(false)
 
     function handleModal():void{
         setOpenModal(!openModal)
@@ -30,7 +30,7 @@ export const Table = () => {
                 </div>
                 <div className="filter-data-list">
                     <p>Date</p>
-                    <input placeholder="Type Date" type="text"id="date"/>
+                    <input  type="date"id="date"/>
                 </div>
                 <div className="filter-data-list">
                     <p>Phone Number</p>
@@ -53,19 +53,19 @@ export const Table = () => {
         </div>
         
         <table className='table' width={"100%"} >
-        <TableHead handleModal = {handleModal} />
-        <tbody>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-            <TableData/>
-        </tbody>
-    </table>
+            <TableHead handleModal = {handleModal} />
+            <tbody>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+                <TableData/>
+            </tbody>
+        </table>
     </div>
     
   )

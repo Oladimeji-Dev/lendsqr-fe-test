@@ -1,6 +1,5 @@
 import filterIcon from '../../../assets/filter.png'
 import './TableHead.scss'
-import { useState } from 'react'
 
 interface Props{
     handleModal:()=>void
