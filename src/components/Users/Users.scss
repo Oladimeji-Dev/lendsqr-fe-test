@@ -81,8 +81,8 @@ $font :'Work Sans', sans-serif;
                     }
                 }
                 // work on this later to make it show
-                li.arrow-item.disabled{
-                    color:black ;
+                li.arrow-item.disabled a{
+                    color:rgba(0, 0, 0, 0.529) ;
                     background: rgba(33, 64, 125, 0.034);
                     
                 }
