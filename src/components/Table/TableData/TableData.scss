@@ -20,13 +20,12 @@ tr.table-data-row{
     .table-data-row-img{
         position: relative;
 
-        &:hover .table-data-details{
-            display: block;
-        }
-
+        // &:hover .table-data-details{
+        //     display: block;
+        // }
         .table-data-details{
             position: absolute;
-            top:15px;
+            top:45px;
             left: -100px;
             display: flex;
             flex-direction: column;

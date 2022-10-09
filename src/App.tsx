@@ -1,10 +1,11 @@
 import React from 'react';
-import { UserDetails } from './pages/UserDetails/UserDetails';
+import { DashBoard } from './pages/DashBoard/DashBoard';
 
 function App() {
   return (
     <div className="App">
-      <UserDetails />
+      {/* <UserDetails /> */}
+      <DashBoard />
     </div>
   );
 }
