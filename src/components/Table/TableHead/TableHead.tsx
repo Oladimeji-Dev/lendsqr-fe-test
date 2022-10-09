@@ -1,14 +1,15 @@
 import filterIcon from '../../../assets/filter.png'
 import './TableHead.scss'
 import { useState } from 'react'
-export const TableHead = () => {
 
+interface Props{
+    handleModal:()=>void
+}
 
-    const [openModal, setOpenModal] = useState(false)
+export const TableHead = ({handleModal}:Props) => {
 
-    function handleModal():void{
-        setOpenModal(!openModal)
-    }
+    
+    
   return (
     <thead>
         <tr className='table-head-row'>

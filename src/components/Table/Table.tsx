@@ -1,11 +1,18 @@
 import './Table.scss'
 import { TableData } from './TableData/TableData'
 import { TableHead } from './TableHead/TableHead'
+import { useState } from 'react'
 
 export const Table = () => {
+    const [openModal, setOpenModal] = useState<Boolean>(true)
+
+    function handleModal():void{
+        setOpenModal(!openModal)
+    }
+
   return (
-    <div className='before-table'>
-        <div className='filter-data-lists'>
+    <div className='before-table' >
+        <div className='filter-data-lists' style={openModal ? { display:"block"} : {display:"none"}}>
             <form className="filter-data-form">
                 <div className="filter-data-list">
                     <p>Organization</p>
@@ -46,7 +53,7 @@ export const Table = () => {
         </div>
         
         <table className='table' width={"100%"} >
-        <TableHead />
+        <TableHead handleModal = {handleModal} />
         <tbody>
             <TableData/>
             <TableData/>
