@@ -3,6 +3,7 @@ import logo from '../../assets/logo.svg'
 import bilboard from '../../assets/pablo.png'
 
 export const Login = () => {
+    //validate the login page and send navigate to dashboard
   return (
     <div className='login'>
         <div className='login-logo-brand'>

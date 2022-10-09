@@ -8,8 +8,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element ={<Login />} />
-        <Route path='/Dashboard' element ={<DashBoard />} />
-        <Route path='/User/:id' element ={<UserDetails />} />
+        <Route path='/dashboard' element ={<DashBoard />} />
+        <Route path='/user/:id' element ={<UserDetails />} />
+        <Route path='/*' element ={<h1>404 error paage not found</h1>} />
       </Routes>
      
     </div>
