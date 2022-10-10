@@ -5,6 +5,7 @@ import activateIcon from '../../../assets/activate-icon.png'
 import blacklistIcon from '../../../assets/blacklist-icon.png'
 import viewIcon from '../../../assets/view-icon.png'
 import { Data } from '../../../model';
+import {Link} from 'react-router-dom'
 
 
 interface Props {
@@ -29,10 +30,12 @@ export const TableData = ({data}:Props) => {
                 <img src={dotIcon} alt="dotIcon" onClick={handleModal} />
                 <div className="table-data-details" 
                 style={openModal ? { display:"block"} : {display:"none"}}>
-                    <div className='row-details'>
-                        <p>View Details</p>
-                        <img src={viewIcon} alt="view-icon" />
-                    </div>
+                    <Link to={`/user/${data.id}`}>
+                        <div className='row-details'>
+                            <p>View Details</p>
+                            <img src={viewIcon} alt="view-icon" />
+                        </div>
+                    </Link>
                     <div className='row-blacklist'>
                         <p>Blaclist User</p>
                         <img src={blacklistIcon} alt="blacklist-icon" />

@@ -25,7 +25,7 @@ export const Table = ({dataSelected}:Props) => {
                     </select>
                 </div>
                 <div className="filter-data-list">
-                    <p>Username</p>
+                    <p>User</p>
                     <input type="text" placeholder='Username' />
                 </div>
                 <div className="filter-data-list">

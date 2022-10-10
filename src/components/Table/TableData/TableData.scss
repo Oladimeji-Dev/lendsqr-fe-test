@@ -5,7 +5,7 @@ tr.table-data-row{
     td{
         padding: 15px 10px;
         border-bottom: 1px solid rgba(33, 63, 125, 0.1);
-        color:#545F7D;
+        
         font-size: 0.8rem;
 
         .inactive{
@@ -17,6 +17,7 @@ tr.table-data-row{
         img{
             cursor: pointer;
         }
+        
     }
     .table-data-row-img{
         position: relative;
@@ -24,6 +25,11 @@ tr.table-data-row{
         // &:hover .table-data-details{
         //     display: block;
         // }
+        a{
+            text-decoration: none;
+            color:#545F7D;
+            
+        }
         .table-data-details{
             position: absolute;
             top:45px;

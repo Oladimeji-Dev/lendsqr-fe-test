@@ -5,6 +5,8 @@ import starFilIcon from '../../assets/star-fil.png'
 import starEmptyIcon from '../../assets/star-empty.png'
 import avatarEmptyIcon from '../../assets/avatar-empty.png'
 export const User = () => {
+    //get the data and populate it
+
   return (
     <div className='user-side'>
         <div className="user-side-container">
