@@ -9,7 +9,7 @@ export interface Data{
         firstName: String,
         lastName: String,
         phoneNumber: String,
-        avatar: String,
+        avatar: string,
         gender: String,
         bvn: String,
         address: String,
