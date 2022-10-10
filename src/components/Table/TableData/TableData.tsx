@@ -4,7 +4,13 @@ import dotIcon from '../../../assets/3dotvector.png'
 import activateIcon from '../../../assets/activate-icon.png'
 import blacklistIcon from '../../../assets/blacklist-icon.png'
 import viewIcon from '../../../assets/view-icon.png'
-export const TableData = () => {
+import { Data } from '../../../model';
+
+
+interface Props {
+    data: Data
+}
+export const TableData = ({data}:Props) => {
     //creted the modal state
     const [openModal, setOpenModal] = useState(false)
     function handleModal():void{
@@ -13,10 +19,10 @@ export const TableData = () => {
 
     return (
         <tr className='table-data-row'>
-            <td>Lendsqr</td>
-            <td>Adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
+            <td>{data.orgName}</td>
+            <td>{data.userName}</td>
+            <td>{data.email}</td>
+            <td>{data.phoneNumber}</td>
             <td>May 15, 2020 10:00 AM</td>
             <td> <span className='inactive'>Inactive</span> </td>
             <td className='table-data-row-img'>

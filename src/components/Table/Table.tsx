@@ -2,14 +2,18 @@ import './Table.scss'
 import { TableData } from './TableData/TableData'
 import { TableHead } from './TableHead/TableHead'
 import { useState } from 'react'
+import {Data} from '../../model'
 
-export const Table = () => {
+interface Props {
+    dataSelected: Data[]
+}
+
+export const Table = ({dataSelected}:Props) => {
     const [openModal, setOpenModal] = useState<Boolean>(false)
 
     function handleModal():void{
         setOpenModal(!openModal)
     }
-
   return (
     <div className='before-table' >
         <div className='filter-data-lists' style={openModal ? { display:"block"} : {display:"none"}}>
@@ -55,15 +59,14 @@ export const Table = () => {
         <table className='table' width={"100%"} >
             <TableHead handleModal = {handleModal} />
             <tbody>
-                <TableData/>
-                <TableData/>
-                <TableData/>
-                <TableData/>
-                <TableData/>
-                <TableData/>
-                <TableData/>
-                <TableData/>
-                <TableData/>
+                
+                {dataSelected.map((item,index)=>(
+                    <TableData 
+                        key={index}
+                        data = {item}
+                    />
+                ))}
+
             </tbody>
         </table>
     </div>
