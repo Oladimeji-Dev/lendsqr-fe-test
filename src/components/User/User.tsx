@@ -4,7 +4,11 @@ import backarrowIcon from '../../assets/back-arrow.png'
 import starFilIcon from '../../assets/star-fil.png'
 import starEmptyIcon from '../../assets/star-empty.png'
 import avatarEmptyIcon from '../../assets/avatar-empty.png'
-export const User = () => {
+import { Data } from '../../model'
+interface Props{
+    userData:Data
+}
+export const User = ({userData}:Props) => {
     //get the data and populate it
 
   return (
@@ -26,8 +30,8 @@ export const User = () => {
                     <div className='profile-name-reg'>
                         <img src={avatarEmptyIcon} alt="avatar-icon" />
                         <div className="profile-nr">
-                            <h2 className='profile-name'>Grace Effiom</h2>
-                            <p className='profile-reg'>LSQFf587g90</p>
+                            <h2 className='profile-name'>{`${userData.profile.firstName}  ${userData.profile.lastName}`}</h2>
+                            <p className='profile-reg'>{userData.accountNumber}</p>
                         </div>
                     </div>
                     <div className='user-tier'>
@@ -39,7 +43,7 @@ export const User = () => {
                         </div>
                     </div>
                     <div className='profile-acct-details'>
-                        <h2>₦200,000.00</h2>
+                        <h2>₦{userData.accountBalance}</h2>
                         <p>9912345678/Providus Bank</p>
                     </div>
                 </div>
@@ -58,27 +62,23 @@ export const User = () => {
                     <div className="user-info-details">
                         <div className="info">
                             <p>FULL NAME</p>
-                            <h3>Grace Effiom</h3>
+                            <h3>{`${userData.profile.firstName}  ${userData.profile.lastName}`}</h3>
                         </div>
                         <div className="info">
                             <p>PHONE NUMBER</p>
-                            <h3>07060780922</h3>
+                            <h3>{userData.profile.phoneNumber}</h3>
                         </div>
                         <div className="info">
                             <p>EMAIL ADDRESS</p>
-                            <h3>grace@gmail.com</h3>
+                            <h3>{userData.email}</h3>
                         </div>
                         <div className="info">
                             <p>BVN</p>
-                            <h3>07060780922</h3>
-                        </div>
-                        <div className="info">
-                            <p>FULL NAME</p>
-                            <h3>Grace Effiom</h3>
+                            <h3>{userData.profile.bvn}</h3>
                         </div>
                         <div className="info">
                             <p>GENDER</p>
-                            <h3>Female</h3>
+                            <h3>{userData.profile.gender}</h3>
                         </div>
                         <div className="info">
                             <p>MARITAL STATUS</p>
@@ -99,35 +99,31 @@ export const User = () => {
                     <div className="user-info-details">
                         <div className="info">
                             <p>LEVEL OF EDUCATION</p>
-                            <h3>B.Sc</h3>
+                            <h3>{userData.education.level}</h3>
                         </div>
                         <div className="info">
                             <p>EMPLOYMENT STATUS</p>
-                            <h3>Employed</h3>
+                            <h3>{userData.education.employmentStatus}</h3>
                         </div>
                         <div className="info">
                             <p>SECTOR OF EMPLOYMENT</p>
-                            <h3>FinTech</h3>
+                            <h3>{userData.education.sector}</h3>
                         </div>
                         <div className="info">
                             <p>DURATION OF EMPLOYMENT</p>
-                            <h3>2 years</h3>
+                            <h3>{userData.education.duration}</h3>
                         </div>
                         <div className="info">
                             <p>OFFICE EMAIL</p>
-                            <h3>grace@lendsqr.com</h3>
+                            <h3>{userData.education.officeEmail}</h3>
                         </div>
                         <div className="info">
                             <p>MONTHLY INCOME</p>
-                            <h3>₦200,000.00- ₦400,000.00</h3>
-                        </div>
-                        <div className="info">
-                            <p>MARITAL STATUS</p>
-                            <h3>Single</h3>
+                            <h3>₦{userData.education.monthlyIncome[0]}- ₦{userData.education.monthlyIncome[1]}</h3>
                         </div>
                         <div className="info">
                             <p>LOAN REPAYMENT</p>
-                            <h3>40,000</h3>
+                            <h3>₦{userData.education.loanRepayment}</h3>
                         </div>
                     </div>
                 </div>
@@ -136,15 +132,15 @@ export const User = () => {
                     <div className="user-info-details">
                         <div className="info">
                             <p>TWITTER</p>
-                            <h3>B.Sc</h3>
+                            <h3>{userData.socials.twitter}</h3>
                         </div>
                         <div className="info">
                             <p>FACEBOOK</p>
-                            <h3>@grace_effiom</h3>
+                            <h3>{userData.socials.facebook}</h3>
                         </div>
                         <div className="info">
                             <p>INSTAGRAM</p>
-                            <h3>@grace_effiom</h3>
+                            <h3>{userData.socials.instagram}</h3>
                         </div>
                     </div>
                 </div>
@@ -153,19 +149,23 @@ export const User = () => {
                     <div className="user-info-details">
                         <div className="info">
                             <p>FULL NAME</p>
-                            <h3>Debby Ogana</h3>
+                            <h3>{`${userData.guarantor.firstName}  ${userData.guarantor.lastName}`}</h3>
                         </div>
                         <div className="info">
                             <p>PHONE NUMBER</p>
-                            <h3>07060780922</h3>
+                            <h3>{userData.guarantor.phoneNumber}</h3>
                         </div>
                         <div className="info">
-                            <p>EMAIL ADDRESS</p>
-                            <h3>debby@gmail.com</h3>
+                            <p>ADDRESS</p>
+                            <h3>{userData.guarantor.address}</h3>
+                        </div>
+                        <div className="info">
+                            <p>GENDER</p>
+                            <h3>{userData.guarantor.gender}</h3>
                         </div>
                         <div className="info">
                             <p>RELATIONSHIP</p>
-                            <h3>Sister</h3>
+                            <h3>UNKOWN</h3>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ export const UserDetails = () => {
         <NavBar />
         <div className="user-details-con">
             <SideBar />
-            <User />
+            <User userData = {userData} />
         </div>
     </div>
   )
