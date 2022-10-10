@@ -18,7 +18,11 @@ $font :'Work Sans', sans-serif;
         width: 85%;
         margin: 0 auto;
 
-        .back-users{
+        a{
+            text-decoration: none;
+            color: $secondary;
+        }
+        .back-users {
         display: flex;
         align-items: center;
         justify-content: space-between;

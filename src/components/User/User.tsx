@@ -1,10 +1,8 @@
 import React from 'react'
 import './User.scss'
-import {useState,useEffect} from'react'
 import backarrowIcon from '../../assets/back-arrow.png'
 import starFilIcon from '../../assets/star-fil.png'
 import starEmptyIcon from '../../assets/star-empty.png'
-//import avatarEmptyIcon from '../../assets/avatar-empty.png'
 import { Link } from 'react-router-dom'
 import {Data} from '../../model'
 interface Props{
@@ -28,10 +26,10 @@ export const User = ({userData,loading}:Props) => {
 
         <div className="user-side-container">
 
-            <div className='back-users'>
+            <Link className='back-users' to={'/users'}>
                 <img src={backarrowIcon} alt="back-arrow-icon" />
                 <p>Back to Users</p>
-            </div>
+            </Link>
             <div className="user-detail-header">
                 <h2>User Details</h2>
                 <div className="user-status-btn">
