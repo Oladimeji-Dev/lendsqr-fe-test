@@ -12,13 +12,13 @@ function App() {
       <Routes>
         <Route path='/' element ={<Login />} />
         <Route path='/*' element ={<h1>404 error paage not found</h1>} />
-        
+
         {/* Private Route that cannot be access unless loged in */}
-        <Route path='/users' element ={<PrivateRoutes />}>
-          <Route path='/users' element ={<DashBoard />} />
+        <Route path='users' element ={<PrivateRoutes />}>
+          <Route path='users' element ={<DashBoard />} />
         </Route>
         <Route path='/users' element ={<PrivateRoutes />}>
-          <Route path='/user/:id' element ={<UserDetails />} />
+          <Route path='user/:id' element ={<UserDetails />} />
         </Route>
       </Routes>
      <ToastContainer />
