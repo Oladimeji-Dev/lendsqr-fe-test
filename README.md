@@ -7,11 +7,11 @@ cause i have not use them which is not an excuse of cause due to submission date
 the email is :lendsqr@lendsqr.com
 the password is : admin
 
-#Users Page / DashBoard
+# Users Page / DashBoard
 The Dashboard/users page is where you can view the users in a table format which you can select a user
 and view the specific user
 
-#User Page
+# User Page
 this is the page whare you can se  an individual data everything about the user and which all the details about that
 specific user
 
