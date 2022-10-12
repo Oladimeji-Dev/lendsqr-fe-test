@@ -1,3 +1,26 @@
+# Lendsqr test page 
+Thank you for giving me an opprtunity for this coding interview even though it my first time writing typscript and sass 
+cause i have not use them which is not an excuse of cause due to submission date i was not able to finish responsive design
+
+
+# Login page 
+the email is :lendsqr@lendsqr.com
+the password is : admin
+
+# Users Page / DashBoard
+The Dashboard/users page is where you can view the users in a table format which you can select a user
+and view the specific user
+
+# User Page
+this is the page whare you can se  an individual data everything about the user and which all the details about that
+specific user
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
