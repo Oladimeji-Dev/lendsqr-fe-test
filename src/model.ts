@@ -43,3 +43,8 @@ export interface Data{
         },
     id: String
 }
+
+export interface login{
+    email:String,
+    password:String
+}
