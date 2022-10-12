@@ -24,6 +24,7 @@ export const UserDetails = () => {
       setUserData(data)
       setLoading(false)
     })
+    // eslint-disable-next-line
   },[])
 
   //send the data into User as props

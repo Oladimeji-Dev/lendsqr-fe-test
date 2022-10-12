@@ -17,7 +17,6 @@ export const Users = () => {
   
 
   const[fetchedData, setFectchedData] =useState([])
-
   const[dataSelected, setDataSelected] = useState<Data[]>([])
   
   
