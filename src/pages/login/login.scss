@@ -1,5 +1,9 @@
 $loginprimary : #39CDCC;
 $loginbackground: #c4c0c00f;
+// Predefined Break-points
+$desktop: 1024px;
+$tablet: 768px;
+$phone: 430px;
 
 @font-face {
     font-family: Avenir Next;
@@ -38,6 +42,12 @@ $loginbackground: #c4c0c00f;
             justify-content: center;
             background-color:$loginbackground;
             height: inherit;
+
+            .pablo img{
+                height: 250px;
+                width: 400px;
+            }
+            
         }
         .right-side{
             // repeated
@@ -97,12 +107,15 @@ $loginbackground: #c4c0c00f;
                     rgba(84, 95, 125, 0.15);
                     border-radius: 5px;
                     margin-bottom: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 10px;
                     
                     //repeted
                     input{
                         border: none;
                         outline: none;
-                        width: 85%;
+                        width: 70%;
                         padding: 10px;
                         background-color: white;
 
@@ -120,7 +133,8 @@ $loginbackground: #c4c0c00f;
                         border: none;
                         background-color: white;
                         color: $loginprimary;
-                        margin-left: auto;
+                        
+                        width: 20%;
 
                         &:hover{
                             cursor: pointer;
@@ -153,3 +167,40 @@ $loginbackground: #c4c0c00f;
         }
     }
 }
+
+
+@media only screen and (max-width: $tablet) {
+    /* For desktop: */
+    .login{
+        .left-side{
+            .pablo img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+    
+  }
+  @media only screen and (max-width: $phone) {
+    /* For desktop: */
+    .login{
+        .left-side{
+           display: none;
+        }
+        .right-side{
+            width: 90%;
+            margin: 0 auto;
+
+            &-form{
+                width: 100%;
+                text-align: center;
+
+                .email-form , .password-form{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    
+  }

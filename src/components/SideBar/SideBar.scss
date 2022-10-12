@@ -7,6 +7,9 @@ $active:rgba(57, 205, 204, 0.06);
 $font :'Work Sans', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+$desktop: 1024px;
+$tablet: 768px;
+$phone: 430px;
 
 .side-bar{
     width: 15%;
@@ -53,4 +56,14 @@ $font :'Work Sans', sans-serif;
         background-color: $active;
         border-left:  3px solid $primary;
     }
+}
+
+
+@media only screen and (max-width: $tablet) {
+   
+    
+}
+@media only screen and (max-width: $phone) {
+    
+    
 }

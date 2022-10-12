@@ -1,6 +1,9 @@
 $primary : #39CDCC;
 $background: #c4c0c00f;
 $secondary: gba(33, 63, 125, 1);
+$desktop: 1024px;
+$tablet: 768px;
+$phone: 430px;
 
 $font :'Work Sans', sans-serif;
 
@@ -80,5 +83,44 @@ nav.nav-bar{
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav.nav-bar{
+        padding: 20px 20px;
+
+        .logo{
+            width: 20%;
+    
+            &:hover{
+                cursor: pointer;
+            }
+            
+        }
+        .nav-right{
+            width: 80%;
+        }
+        
+    }
+    
+}
+@media only screen and (max-width: $tablet) {
+    
+    nav.nav-bar{
+        padding: 15px 15px;
+
+        .logo{
+            width: 20%;
+    
+            &:hover{
+                cursor: pointer;
+            }
+            
+        }
+        .nav-right{
+            width: 80%;
+        }
+        
     }
 }
