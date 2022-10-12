@@ -4,7 +4,7 @@ import bilboard from '../../assets/pablo.png'
 import { useState } from 'react'
 import { login } from '../../model'
 import { useNavigate } from 'react-router-dom'
-// import { Toast } from 'react-toastify/dist/components'
+
 
 
 export const Login = () => {
