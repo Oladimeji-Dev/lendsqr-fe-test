@@ -45,6 +45,7 @@ export const Login = () => {
 
             if(formInput.password === 'admin'){
                 //login successfull and navigate
+                localStorage.setItem('auth',JSON.stringify({token:true}))
                 navigate('/users')
             }else{
                 alert('password incorrect')
