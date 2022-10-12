@@ -4,6 +4,8 @@ import bilboard from '../../assets/pablo.png'
 import { useState } from 'react'
 import { login } from '../../model'
 import { useNavigate } from 'react-router-dom'
+// import { Toast } from 'react-toastify/dist/components'
+
 
 export const Login = () => {
 
@@ -36,7 +38,7 @@ export const Login = () => {
         e.preventDefault()
 
         if(formInput.email.trim() === "" || formInput.password.trim() === ""){
-           return console.log("input field is empty")
+           return  alert('input field empty')
         }
 
         if(formInput.email.toLowerCase() === 'lendsqr@lendsqr.com'){
@@ -45,10 +47,10 @@ export const Login = () => {
                 //login successfull and navigate
                 navigate('/users')
             }else{
-                console.log('password incoret')
+                alert('password incorrect')
             }
         }else{
-            console.log("email not correct")
+            alert("email not correct")
         }
     }
     
@@ -81,7 +83,7 @@ export const Login = () => {
                         <input type= {show ? "text" : "password"}   placeholder='Password' 
                         name='password'
                         onChange={handleChangeInput}/>
-                        <button className='show-btn'  onClick={handleShowPass}>{show ? "SHOW" : "HIDE"}  </button>
+                        <button className='show-btn'  onClick={handleShowPass}>{show ? "HIDE" : "SHOW"}  </button>
                     </div>
                     <p className='forgot-password'>FORGOT PASSWORD?</p>
                     <button type='submit' className='submit-btn'> LOG IN</button>
