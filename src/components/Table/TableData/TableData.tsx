@@ -6,7 +6,6 @@ import blacklistIcon from '../../../assets/blacklist-icon.png'
 import viewIcon from '../../../assets/view-icon.png'
 import { Data } from '../../../model';
 import {Link} from 'react-router-dom'
-import { SyntheticEvent } from 'react-toastify/dist/utils';
 
 
 interface Props {
@@ -39,6 +38,10 @@ export const TableData = ({data}:Props) => {
             inactive:false
         }))
     }
+    const dateString = data?.createdAt
+    const utcDate = new Date(dateString).toUTCString();
+    const date = utcDate.slice(0,17);
+    
     
 
     return (
@@ -47,7 +50,8 @@ export const TableData = ({data}:Props) => {
             <td>{data.userName}</td>
             <td>{data.email}</td>
             <td>{data.phoneNumber}</td>
-            <td>May 15, 2020 10:00 AM</td>
+            <td>{date}</td>
+            {/* <td>May 15, 2020 10:00 AM</td> */}
             <td> <span className={status.active ? 'active' : 'blacklisted'}>{status.active ? 'Active' : 'Blacklisted'}</span> </td>
             <td className='table-data-row-img'>
                 <img src={dotIcon} alt="dotIcon" onClick={handleModal} />

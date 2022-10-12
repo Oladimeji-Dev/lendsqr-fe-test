@@ -1,5 +1,5 @@
 export interface Data{
-    createdAt: String,
+    createdAt: string,
     orgName:  String,
     userName: String,
     email: String,
