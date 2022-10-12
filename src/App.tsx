@@ -1,10 +1,8 @@
-import React from 'react';
 import {Routes,Route} from 'react-router-dom'
 import { DashBoard } from './pages/DashBoard/DashBoard';
 import { Login } from './pages/Login/Login';
 import { UserDetails } from './pages/UserDetails/UserDetails';
-import 'react-toastify/dist/ReactToastify.css';
-//import PrivateRoutes from './util/PrivateRoutes';
+
 function App() {
   return (
     <div className="App">
