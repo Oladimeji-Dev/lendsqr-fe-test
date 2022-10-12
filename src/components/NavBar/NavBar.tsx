@@ -5,12 +5,13 @@ import bellIcon from '../../assets/bell-icon.png'
 import avatar from '../../assets/avatar.png'
 import downIcon from '../../assets/dropdown.png'
 import { SearchBox } from '../SearchBox/SearchBox'
+import { Link } from 'react-router-dom'
 export const NavBar = () => {
   return (
     <nav className='nav-bar'>
-        <div className='logo'>
+        <Link className='logo' to={'/users'}>
             <img src={logo} alt="logo-icon" />
-        </div>
+        </Link>
         <div className="nav-right">
             <div>
                 <SearchBox />
