@@ -17,7 +17,7 @@ export const Users = () => {
   
 
   const[fetchedData, setFectchedData] =useState([])
-  const[pageSelected, setPageSelected] =useState(1)
+
   const[dataSelected, setDataSelected] = useState<Data[]>([])
   
   
@@ -40,7 +40,7 @@ export const Users = () => {
   const handlePageClick = (data:PageData):void =>{
      const selected = data.selected + 1
     const datas: Data[] = []
-    setPageSelected( selected)
+   
 
     const perPage = 10
     const currentPage = selected
