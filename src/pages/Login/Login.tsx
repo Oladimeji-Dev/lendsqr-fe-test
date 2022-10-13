@@ -98,7 +98,7 @@ export const Login = () => {
                         <input type= {show ? "text" : "password"}   placeholder='Password' 
                         name='password'
                         onChange={handleChangeInput}/>
-                        <button className='show-btn'  onClick={handleShowPass}>{show ? "HIDE" : "SHOW"}  </button>
+                        <button type='button' className='show-btn'  onClick={handleShowPass}>{show ? "HIDE" : "SHOW"}  </button>
                     </div>
                     <p className='forgot-password'>FORGOT PASSWORD?</p>
                     <button type='submit' className='submit-btn'> LOG IN</button>
