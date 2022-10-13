@@ -10,12 +10,13 @@ import { useNavigate } from 'react-router-dom'
 export const Login = () => {
 
     const navigate = useNavigate()
-
+    
+    const[loading,setLoading] = useState(false)
     const [show, setShow] = useState(false)
     const [formInput, setFormInput] = useState<login>({
         email: "",
         password: "",
-      })
+    })
 
     const handleShowPass = (e:React.SyntheticEvent): void =>{
         e.preventDefault()
@@ -44,9 +45,19 @@ export const Login = () => {
         if(formInput.email.toLowerCase() === 'lendsqr@lendsqr.com'){
 
             if(formInput.password === 'admin'){
-                //login successfull and navigate
-                localStorage.setItem('auth',JSON.stringify({token:true}))
-                navigate('users')
+                setLoading(true)
+                fetch('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
+                .then((response) => response.json())
+                .then((data) => {
+                    localStorage.setItem('usersData', JSON.stringify(data))
+                    localStorage.setItem('auth',JSON.stringify({token:true}))
+                    setLoading(false)
+                })
+                //login and not loading successfull and navigate
+                setTimeout(()=>{
+                    if(!loading) navigate('users')
+                },1000)
+                
             }else{
                 alert('password incorrect')
             }
@@ -60,6 +71,9 @@ export const Login = () => {
 
   return (
     <div className='login'>
+
+        {loading ? <h4>Loading ...</h4> : 
+        <>
         <div className='login-logo-brand'>
             <img src={logo} alt="brand"/>
         </div>
@@ -91,7 +105,10 @@ export const Login = () => {
                 </form>
             </div>
         </div>
-        
+        </>  }
+
     </div>
+
+  
   )
 }

@@ -55,8 +55,6 @@ export const Users = () => {
   }
 
 
-  console.log(dataSelected)
-
   return (
     <div className='users-side'>
         <div className="users-side-container">
